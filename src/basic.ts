@@ -10,9 +10,9 @@ user += " Joshi";
 
 // Array ---------------------------------------------------------------------------------------
 const names: string[] = user.split(" ");
+const myNums: number[] = [1, 2, 3, 4, 5];
 
 const myValues: Array<number> = [1, 2, 3, 4, 5]; // generic way
-const myNums: number[] = [1, 2, 3, 4, 5]; // generic way
 
 let idsGeneric: Array<number | string> = [1, "two", 3]; // union of number and string
 
@@ -29,6 +29,7 @@ let idsGeneric: Array<number | string> = [1, "two", 3]; // union of number and s
 interface Person {
   firstName: string;
   firstLast: string;
+  optional?: string; // this is optional
 }
 
 const obj: Person = {
